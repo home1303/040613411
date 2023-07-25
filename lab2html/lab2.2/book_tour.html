@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<link rel="stylesheet" href="/lab2.2/style.css">
+</head>
+<body>
+
+<h3>แบบฟอร์มจองทัวร์</h3>
+<form>
+    <p>
+      <fieldset>
+        <legend><b>ข้อมูลทั่วไป</b><span aria-label="required"></span></legend>
+
+          <label for="t2">ชื่อ-สกุล:</label><br>
+          <input type="email" id="t2" name="email" placeholder="กรอกชื่อ-สกุล"> <b>*</b><br>
+          <label for="t2">Email:</label><br>
+          <input type="email" id="t2" name="email"> <b>*</b><br>
+          <label for="t2">โทรศัพท์:</label><br>
+          <input type="email" id="t2" name="email" value="+66" pattern="[0-9]{9}">
+          <label for="t3">ที่อยู่:</label><br>
+          <textarea id="t3" name="msg" maxlength="180" rows="5"></textarea><br>
+          <label for="t2">โทรศัพท์:</label>
+          <input type="email" id="t2" name="email"><br>
+          <label for="avatar">รูปผู้จอง: </label>
+            <input type="file"
+            id="avatar" name="avatar"
+            accept="image/png, image/jpeg">
+
+      </fieldset>
+    </p>
+
+    <p>
+      <fieldset>
+        <legend><b>ข้อมูลเข้าสู่ระบบ</b><span aria-label="required"></span></legend>
+
+        <label for="t2">Username:</label><br>
+          <input type="text" id="t2" name="username" pattern="[A-Za-z_]{8,}"><br>
+          <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</i></p>
+          <label for="t2">Password:</label></h3><br>
+          <input type="text" id="t2" name="username" pattern=".{8,}"><br>
+          <i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i></p>
+
+
+      </fieldset>
+    </p>
+
+    <p>
+      <fieldset>
+        <legend><b>ข้อมูลทัวร์ที่ต้องการ</b><span aria-label="required"></span></legend>
+
+        <label for="pack">แพคเก็จทัวร์ :</label>
+        <select name="pack" id="pack">
+          <option value="Thailand">Thailand</option>
+          <option value="France">France</option>
+          <option value="England">England</option>
+        </select>
+        <br>
+
+        <label for="start">วันที่เดินทาง :</label>
+
+<input type="month" id="start" name="start"
+       min="2018-03" value="dd-yy"><br>
+
+       <label for="number">จำนวนผู้เดินทาง :</label>
+       <input type="number" id="number" name="amount" value="" min="1" max="10" /><br>
+       เน้นการท่องเที่ยวแบบใด?
+       <div>
+        <input type="checkbox" id="ชอปปิ้ง" name="ชอปปิ้ง">
+        <label for="scales">ชอปปิ้ง</label>
+      </div>
+  
+      <div>
+        <input type="checkbox" id="ธรรมชาติ" name="ธรรมชาติ">
+        <label for="ธรรมชาติ">ธรรมชาติ</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="ทะเล" name="ทะเล">
+        <label for="ทะเล">ทะเล</label>
+      </div>
+
+
+      </fieldset>      
+    </p>
+    <p> 
+      <div>
+        ยอมรับเงื่อนไขและข้อตกลง
+        <input type="radio" id="contactChoice1" name="contact" value="email" / checked>
+        <label for="contactChoice1">I agree</label>
+  
+        <input type="radio" id="contactChoice2" name="contact" value="phone" />
+        <label for="contactChoice2">I disagree</label>
+
+        <button type="submit">จอง</button>
+      </div>
+  </p>
+    
+</form>
+
+</body>
+</html>

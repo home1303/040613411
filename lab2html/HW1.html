@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+</head>
+<body>
+        <h1>Homework</h1><hr>
+        <form class="input" action=" ">  
+        Name Homework:
+        <input type="text" name="name">
+        
+        <h3>1. ชื่อเต็ม/ย่อของสาขาวิชา</h3>
+            <select name="dept">
+            <option value="">--Please choose an option--</option>
+            <option value="CS">CS/วิทยาการคอมพิวเตอร์และสารสนเทศ</option>
+            <option value="IC">IC/เคมีอุตสาหกรรม</option>
+            <option value="MA">MA/คณิตศาสตร์</option>
+            <option value="IMI">IMI/ฟิสิกส์อุตสาหกรรมและอุปกรณ์การแพทย์ </option>
+            <option value="AS">AS/สถิติประยุกต์</option>
+            <option value="AFET">AFET/เทคโนโลยีอุตสาหกรรมเกษตร อาหารและสิ่งแวดล้อม</option>
+            <option value="BT">BT/เทคโนโลยีชีวภาพ</option>
+            </select>
+        <h5></h5>
+            
+        <h3>2. จำนวนเงินที่จะโอน</h3> 
+        <input 
+            type="text"
+            name="จำนวนเงินที่จะโอน"
+            placeholder="จำนวนเงินที่จะโอน"
+            pattern="[0-9]*"
+            title="ต้องเป็นตัวเลขเท่านั้น"
+        >
+
+        <h3>3. อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</h3> 
+        <input  
+            type="text"
+            name="อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย"
+            placeholder="อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย"
+            pattern="[a-z]{2,}[\-][a-z]{2,}[\-][a-z]{2,}[\-][a-z]{2,}[\-][a-z]{2,}[\-]"
+            title=""
+        >
+        <p>เช่น Sandwich-Grits-Gumbo-Hamburger-Nacho</p>
+
+        <h3>4. ค่าไฟฟ้า 3 เดือนที่ผ่านมา</h3> 
+        <input 
+            type="text"
+            name="ค่าไฟฟ้า 3 เดือนที่ผ่านมา"
+            placeholder="ค่าไฟฟ้า 3 เดือนที่ผ่านมา"
+            pattern="[0-9]*"
+            title=""
+        >
+
+        <h3>5. รหัสบัตรประชาชน</h3> 
+        <input 
+            type="text"
+            name="x-xxxx-xxxxx-xx-x"
+            placeholder="x-xxxx-xxxxx-xx-x"
+            pattern="\d{1}[\-]\d{4}[\-]\d{5}[\-]\d{2}[\-]\d{1}"
+            title=""
+        >
+
+        <h3>6. ความพึงพอใจของหนังสือเล่มนี้</h3> 
+        <input type="radio" name="satisfaction" value="5">
+        <label for="satisfaction">มากที่สุด</label>
+        <input type="radio" name="satisfaction" value="4">
+        <label for="satisfaction">มาก</label>
+        <input type="radio" name="satisfaction" value="3">
+        <label for="satisfaction">ปานกลาง</label>
+        <input type="radio" name="satisfaction" value="2">
+        <label for="satisfaction">น้อย</label>
+        <input type="radio" name="satisfaction" value="1">
+        <label for="satisfaction">น้อยมาก</label>
+        
+        
+
+        <h3>7. อาการป่วย</h3> 
+        <input 
+            type="text"
+            name="อาการป่วย"
+            placeholder="อาการป่วย"
+            pattern="[a-z]"
+            title=""
+        >
+
+        <h3>8. ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</h3> 
+        <input type="radio" name="vaccine" value="yes">
+        <label for="vaccine">Yes</label>
+        <input type="radio" name="vaccine" value="no">
+        <label for="vaccine">No</label>
+
+        <h3>9. รหัสผ่าน</h3> 
+        <input type="password" name="password">
+
+        <h3>10. เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</h3> 
+        <label for="start">start : </label>
+        <input type="time" id="start" name="start">
+        <label for="stop">to</label>
+        <input type="time" id="stop" name="stop">
+        
+        <h3>11. วันเวลาที่ต้องไปพบแพทย์</h3> 
+        <label for="Date">Date : </label>
+        <input type="date" id="Date" name="วันเวลาที่ต้องไปพบแพทย์"><br>
+        <label for="Time">Time : </label>
+        <input type="time" id="Time" name="วันเวลาที่ต้องไปพบแพทย์">
+
+        <br><br>
+        <input type="submit" value="submit">    
+        </form>
+</body>
+</html>
