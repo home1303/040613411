@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        function addinfo() {
+            var textInput = document.getElementById("name");
+            var Name1 = textInput.value;
+            var textInput = document.getElementById("address");
+            var Address1 = textInput.value;
+            var textInput = document.getElementById("phone");
+            var Phone1 = textInput.value;
+
+            alert("Adding " + Name1);
+
+            var name = document.createElement("th");
+            name.innerHTML = Name1;
+            var th = document.getElementById("list_customer");
+            th.appendChild(name);
+
+            var address = document.createElement("th");
+            address.innerHTML = Address1;
+            var th = document.getElementById("list_customer");
+            th.appendChild(address);
+
+            var phone = document.createElement("th");
+            phone.innerHTML = Phone1;
+            var th = document.getElementById("list_customer");
+            th.appendChild(phone);
+        }
+    </script>
+</head>
+
+<body>
+        ชื่อลูกค้า: <input type="text" id="name"><br>
+        ที่อยู่: <input type="text" id="address"><br>
+        โทรศัพท์: <input type="text" id="phone"><br>
+        <input type="button" id="addButton" value="เพิ่ม" onclick="addinfo()">
+
+    <table border="1" id="list_customer">
+        <th>ชื่อลูกค้า</th>
+        <th>ที่อยู่</th>
+        <th>โทรศัพท์</th>
+
+        
+    </table>
+</body>
+
+</html>
