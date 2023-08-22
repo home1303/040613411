@@ -1,0 +1,19 @@
+body{
+
+    background-color: #D3D3D3;
+}
+
+div{
+
+    font-size: 36px;
+    text-align: center;
+    color: brown;
+}
+p{
+    text-align: center;
+    color: orange;
+}
+a{
+    text-align: center;
+    color: red;
+}

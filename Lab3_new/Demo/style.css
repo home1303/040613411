@@ -1,0 +1,27 @@
+h1 cite{
+    color: red;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 36px;
+
+}
+
+.country{
+    color: green;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+
+section header + p::first-letter{font-size: 40px;}
+
+#ellipsesParagraph{
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+section{
+    border-bottom: solid 1px black;
+}
