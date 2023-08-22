@@ -1,0 +1,36 @@
+<html>
+<head>
+<script>
+function change1() {
+    var name_get = document.getElementById("name").value;
+    var age_get = document.getElementById("age").value;
+    var bd_get = document.getElementById("bd").value;
+
+    if(name_get != ""){
+        document.getElementById("name").style.color = "green";
+    }
+    else{
+        document.getElementById("name").style.color = "black";
+    }
+    if(age_get != ""){
+        document.getElementById("age").style.color = "green";
+    }
+    else{
+        document.getElementById("age").style.color = "black";
+    }
+    if(bd_get != ""){
+        document.getElementById("bd").style.color = "green";
+    }
+    else{
+        document.getElementById("bd").style.color = "black";
+    }
+}
+</script>
+</head>
+<body>
+<h1>Register</h1>
+Name: <input type="text" id="name" onclick="change1()"><br>
+Age: <input type="text" id="age" onclick="change1()"><br>
+Birthdate: <input type="text" id="bd" onclick="change1()"><br>
+</body>
+</html>
