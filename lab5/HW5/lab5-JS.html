@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab JS</title>
+
+</head>
+
+<body>
+    <script>
+        let student = [
+            {
+                fullname: "นายตั้งใจ เรียนมาก",
+                age: 18,
+                year: 1,
+                gpa: 3.4,
+                help: true,
+            },
+            {
+                fullname: "นายส่งงาน ตลอดมา",
+                age: 19,
+                year: 2,
+                gpa: 3.0,
+                help: false,
+            },
+            {
+                fullname: "นางสาวใส่ใจ ดีงาม",
+                age: 20,
+                year: 3,
+                gpa: 2.9,
+                help: true,
+            },
+        ];
+        for (let i = 0; i < student.length; i++) {
+            let scholarship = '';
+
+            // เช็คเงื่อนไขการรับทุน
+            if ((student[i].year >= 2 && student[i].help && student[i].gpa >= 2.75) || student[i].gpa >= 3.20) {
+                scholarship = 'ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย';
+            } else {
+                scholarship = 'ไม่ได้รับทุนการศึกษา เนื่องจากเกรดเฉลี่ยไม่ถึงเกณฑ์และยังไม่ได้ช่วยงานภาควิชาด้วย';
+            }
+
+            // แสดงผลลัพธ์ทาง console
+            console.log(`${student[i].fullname} เกิดเมื่อปี ${2566 - student[i].age} ${scholarship}`);
+        }
+
+        // แสดงสรุปรายชื่อนักศึกษาที่ได้รับทุนตามชั้นปี
+        for (let year = 1; year <= 3; year++) {
+            let scholarshipStudents = student.filter(student => {
+                return (student.year === year && ((student.year >= 2 && student.help && student.gpa >= 2.75) || student.gpa >= 3.20));
+            });
+
+            console.log(`ชั้นปีที่ ${year}`);
+            if (scholarshipStudents.length === 0) {
+                console.log("ไม่มี");
+            } else {
+                scholarshipStudents.forEach(s => {
+                    console.log(`${s.fullname} เนื่องจากเกรดเฉลี่ยถึงเกณฑ์และยังช่วยงานภาควิชาด้วย`);
+                });
+            }
+        }
+
+    </script>
+</body>
+
+</html>
