@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab JS</title>
+    <style>
+        #outer a{
+            background-color: red;
+        }
+        #outer #inner a{
+            background-color: blue;
+        }
+        #outer div ul li a {
+            color: yellow;
+        }
+        #outer div ul .nav a{
+            color: white;
+        }
+        div div li:nth-child(2) a:hover{
+            border: 10px solid black;
+        }
+        div li:nth-child(2) a:hover{
+            border: 10px dashed black;
+        }
+        div div .nav:nth-child(2) a:hover{
+            border: 10px double black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer" class="container">
+        <div id="inner" class="container">
+            <ul>
+                <li class="nav"><a href="#">one</a></li>
+                <li class="nav"><a href="#">two</a></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
